@@ -102,8 +102,7 @@
     "name": "dashi296",
     "email": "falcon0296@gmail.com"
   },
-  "contributors": [
-  ],
+  "contributors": [],
   "license": "MIT",
   "keywords": [
     "electron",
@@ -212,13 +211,18 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.4.1",
+    "@mui/styled-engine-sc": "^5.4.1",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.4",
     "electron-updater": "^4.6.5",
     "history": "^5.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.1"
+    "react-router-dom": "^6.2.1",
+    "styled-components": "^5.3.3"
   },
   "devEngines": {
     "node": ">=14.x",
