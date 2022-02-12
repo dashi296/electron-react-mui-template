@@ -1,41 +1,42 @@
+import { Box, Button, ButtonBase, Link, Typography } from '@mui/material';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
 import './App.css';
 
 const Hello = () => {
   return (
-    <div>
-      <div className="Hello">
+    <Box>
+      <Box className="Hello">
         <img width="200px" alt="icon" src={icon} />
-      </div>
-      <h1>electron-react-boilerplate</h1>
-      <div className="Hello">
-        <a
+      </Box>
+      <Typography variant="h5" sx={{ textAlign: 'center' }}>electron-react-boilerplate</Typography>
+      <Box className="Hello">
+        <Link
           href="https://electron-react-boilerplate.js.org/"
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">
+          <Button variant="contained">
             <span role="img" aria-label="books">
               📚
             </span>
             Read our docs
-          </button>
-        </a>
-        <a
+          </Button>
+        </Link>
+        <Link
           href="https://github.com/sponsors/electron-react-boilerplate"
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">
+          <Button variant="contained">
             <span role="img" aria-label="books">
               🙏
             </span>
             Donate
-          </button>
-        </a>
-      </div>
-    </div>
+          </Button>
+        </Link>
+      </Box>
+    </Box>
   );
 };
 
